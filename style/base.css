@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+nav,
+header,
+main,
+footer {
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+@media only screen and (min-width: 37.5em) {
+	main {
+		grid-template-columns: 1fr 1fr;
+	}
+ 
+
+	main section:nth-child(2) {
+		display: block;
+	}
+
+	main section:nth-child(3) {
+		grid-column: span 2;
+	}
+    main section picture {
+		display: block;
+	}
+  #menu {
+  display: none; /* hide hamburger button */
+  }
+ 
+}  
+
+
+ 
+
+@media only screen and (min-width: 60em) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    main section:nth-child(1) {
+        grid-column: 1/2;
+    }
+    main section:nth-child(2) {
+        grid-column: 2/3;
+        grid-row: 1/2;
+      }
+        
+    
+        main section:nth-child(3) {
+            grid-column: span 1;
+        }
+       
+ }  
+  /* Medium screens */
+  @media all and (max-width: 800px) {
+    .navigation {
+      /* When on medium sized screens, we center it by evenly distributing empty space around items */
+      justify-content: space-around;
+    }
+  }
+  
+  /* Small screens */
+  @media all and (max-width: 500px) {
+    .navegacion {
+      /* On small screens, we are no longer using row direction but column */
+      flex-direction: column;
+    }
+    #menu {
+      position: absolute;
+      font-size: 1.5rem;
+      border: 1px solid rgba(0,0,0,.3);
+      padding: .25rem .75rem;
+      background-color: #eee;
+      color: black;
+      top: 1rem;
+      right: 1rem;
+      
+    }
+    #menu::before {
+      content: "☰";
+    }
+    
+    #menu.open::before {
+      content: "✖️";
+    }
+     
+  }
+header {
+    
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+    background-color: #9ad1d4;  
+}
+
+img {
+    margin-right: 20px;
+    width: 100px;
+    height: auto;
+    align-items: center;
+    border: 5px solid #003249;
+    border-radius: 10px;
+       
+}
+h1{
+    font-family: 'Crimson Pro', serif;
+    font-size: 48px;
+    color: #003249;
+    font-size: 2em;
+    font-weight: lighter;
+    margin-left: -20px;
+    margin-left: 0;
+    text-align: center;
+}
+
+
+
+nav{
+ 
+  background-color: #003249;
+  display: flex;
+  flex-direction:row;
+  text-align: center;
+  padding: 2px;
+  font-size: 1.5em;
+  border-top: 25px;
+  padding-bottom: 1px;
+ 
+}
+
+	.navigation {
+		display: flex;
+	  flex-direction: column;
+	  list-style: none;
+	  color:#003249;
+
+	}
+
+  .navegacion a {
+    display: block;
+    padding-inline: 5%;
+    text-decoration: none;
+    color: #fff;
+  }
+  .navegacion a:hover {
+    background-color: #bbb;
+    color: #003249;
+    
+  }
+ 
+  .open a {
+    display: block;
+    width: 100%;
+  }
+
+   
+h2 {
+		font-size: 1.5rem;
+		text-align: center;
+    padding: 10px;
+    color: #003249;
+    border-bottom: 1px solid rgb(2, 39, 43);
+  }
+  ul li{
+    list-style-type: none;
+  }
+
+  ::placeholder{
+    display: block;
+    width: auto;
+    height: auto;
+  }
+  #frame{
+    margin-left: 10%;
+    width: 80%;
+    height: 350px;
+}
+
+
+  footer{
+    padding: 10px;
+    background-color:#003249; 
+    color: #9ad1d4;  
+    text-align: center;
+    padding-bottom: 15px;
+    margin-top: 1.5%;   
+}
+
+.card {
+    max-width: 80%;
+    text-align: left;
+    color: #003249;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px 5px 5px rgba(0.2,0.2,0.2,0.2);
+    padding-bottom: 15px;
+}
+.car a{
+  text-align: center;
+}
+
+h3{
+    color: #9ad1d4;
+    text-align: center;
+    background-color: #003249;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 15px;
+}
+p{
+    text-align: center;
+  
+
+}
+   
+
+
+.highlight {
+    color: #20a04d;
+} 
+
